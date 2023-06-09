@@ -1,0 +1,147 @@
+@import '../../../public/styles/variables.scss';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+
+  .head-left {
+    position: absolute;
+    top: -265px;
+    left: -390px;
+  }
+
+  .head-right {
+    position: absolute;
+    top: -500px;
+    right: -445px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 110px;
+  margin-bottom: 155px;
+  .logo {
+    margin-bottom: 75px;
+  }
+  &__title {
+    font-size: 72px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: $dark-blue;
+    opacity: 0.39;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 18px;
+    max-width: 430px;
+    margin-bottom: 12px;
+  }
+  &__btn {
+    background-color: $blue;
+    color: $white;
+    border-radius: 40px;
+    width: 240px;
+    height: 60px;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 26px;
+  }
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 90px;
+  &__value, &__separate {
+    color: $dark-blue;
+    font-size: 72px;
+    font-weight: 600;
+  }
+  &__separate {
+    margin: 0 30px;
+  }
+  &__mean {
+    position: relative;
+    color: $white;
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+  }
+}
+
+.bottom {
+  background-color: $dark-blue;
+  width: 100%;
+
+  &__container {
+    margin: 63px auto 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  &__form {
+    width: 440px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    background-color: $white;
+    border: 1px solid $black;
+  }
+  &__email {
+    width: 390px;
+    height: 100%;
+    border-radius: 40px;
+    padding-left: 25px;
+    outline: none;
+    &::placeholder {
+      color: $light-black;
+      font-size: 18px;
+    }
+  }
+  &__events-btn {
+    color: $white;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: absolute;
+    right: 100px;
+    div {
+      margin-right: 10px;
+    }
+  }
+
+  &__send-btn {
+    background-color: $red;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    position: relative;
+    margin: auto 0;
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

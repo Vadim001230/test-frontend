@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-$black: rgba(0, 0, 0, 0.8);
-$light-black: rgba(0, 0, 0, 0.6);
-$white: #FFFFFF;
-$light-white: rgba(255, 255, 255, 0.8);
-$blue: #1D4169;
-$dark-blue: #162C4E;
-$red: #DF2224;
+@import 'variables.scss';
 
 *,
 *::before,
@@ -25,6 +18,7 @@ body, html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   min-height: 100vh;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -36,6 +30,7 @@ body {
 h1, h2, h3, h4, h5, h6, p, button {
   padding: 0;
   margin: 0;
+  font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
   border: none;
