@@ -18,9 +18,9 @@ export default function MainSection() {
           </a>
         </h1>
         <h2 className="info__title">under construction</h2>
-        <p className="info__text">We&apos;re making lots of improvements and will be back soon</p>
+        <p className="info__text text-one">We&apos;re making lots of improvements and will be back soon</p>
         <DateCounter />
-        <p className="info__text">Check our event page when you wait:</p>
+        <p className="info__text text-two">Check our event page when you wait:</p>
         <button type="button" className="info__btn">
           <div>Go to the event</div>
           <ArrowRight />
