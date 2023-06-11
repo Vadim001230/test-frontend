@@ -1,0 +1,58 @@
+@import '../../../public/styles/variables.scss';
+
+.popup {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($dark-blue, 0.6);
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 320px;
+    height: 370px;
+    padding: 20px;
+    background-color: $white;
+    position: relative;
+  }
+  &__cancel {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
+  }
+  &__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 30px;
+    &_success {
+      color: $dark-blue;
+    }
+    &_error {
+      color: $red;
+    }
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__btn {
+    font-size: 18px;
+    color: $white;
+    background-color: $blue;
+    border-radius: 40px;
+    width: 200px;
+    height: 60px;
+  }
+
+}

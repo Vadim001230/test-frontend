@@ -25,7 +25,7 @@ export default function DateCounter() {
       setMinutes(formatValue(minutesCount));
       setSeconds(formatValue(secondsCount));
     };
-
+    updateCounter();
     const timer = setInterval(updateCounter, 1000);
 
     return () => clearInterval(timer);
