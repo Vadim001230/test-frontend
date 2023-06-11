@@ -36,7 +36,7 @@ export default function DateCounter() {
       <div className="date__item">
         <div className="date__value">{days}</div>
         <div className="date__mean">
-          {window.innerWidth >= 770 ? 'Days' : 'DD'}
+          {window.innerWidth >= 800 ? 'Days' : 'DD'}
           <DateBg />
         </div>
       </div>
@@ -44,7 +44,7 @@ export default function DateCounter() {
       <div className="date__item">
         <div className="date__value">{hours}</div>
         <div className="date__mean">
-          {window.innerWidth >= 770 ? 'Hours' : 'HH'}
+          {window.innerWidth >= 800 ? 'Hours' : 'HH'}
           <DateBg />
         </div>
       </div>
@@ -52,7 +52,7 @@ export default function DateCounter() {
       <div className="date__item">
         <div className="date__value">{minutes}</div>
         <div className="date__mean">
-          {window.innerWidth >= 770 ? 'Minutes' : 'MM'}
+          {window.innerWidth >= 800 ? 'Minutes' : 'MM'}
           <DateBg />
         </div>
       </div>
@@ -60,7 +60,7 @@ export default function DateCounter() {
       <div className="date__item">
         <div className="date__value">{seconds}</div>
         <div className="date__mean">
-          {window.innerWidth >= 770 ? 'Seconds' : 'SS'}
+          {window.innerWidth >= 800 ? 'Seconds' : 'SS'}
           <DateBg />
         </div>
       </div>

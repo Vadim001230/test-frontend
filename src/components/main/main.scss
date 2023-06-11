@@ -7,11 +7,13 @@
   align-items: center;
   height: 100vh;
   text-align: center;
+  position: relative;
+  overflow-x: hidden;
 
   .head-left {
     position: absolute;
-    top: -265px;
-    left: -390px;
+    top: -270px;
+    left: -385px;
     opacity: 0;
     animation: fadeInCloudLeft 1.3s linear 0.2s forwards;
   }
@@ -270,15 +272,15 @@
     }
   }
   .main .head-left {
-    scale: 0.5;
-    top: -330px;
-    left: -400px;
+    scale: 0.6;
+    top: -340px;
+    left: -410px
   }
   .main .head-right {
     top: -520px;
   }
   .bottom__container {
-    margin: 40px auto 50px;
+    margin: 40px auto;
   }
 }
 
@@ -309,6 +311,10 @@
 }
 
 @media (max-width: 768px) {
+  .main {
+    height: auto;
+  }
+
   .info {
     margin-top: 100px;
     margin-bottom: 155px;
@@ -326,11 +332,11 @@
   }
 
   .text-two {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .date {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     &__value, &__separate {
       line-height: 1.7;
     }
@@ -390,5 +396,11 @@
     &__email {
       width: 240px;
     }
+  }
+}
+
+@media (max-width: 340px) {
+  .date__separate {
+    margin: 0px 8px;
   }
 }
