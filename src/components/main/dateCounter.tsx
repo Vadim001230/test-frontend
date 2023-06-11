@@ -1,12 +1,13 @@
 import './main.scss';
 import { useEffect, useState } from 'react';
 import { ReactComponent as DateBg } from '../../UI/icons/date-bg.svg';
+import formatValue from '../../helpers/formatValue';
 
 export default function DateCounter() {
-  const [days, setDays] = useState(0);
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
+  const [days, setDays] = useState('00');
+  const [hours, setHours] = useState('00');
+  const [minutes, setMinutes] = useState('00');
+  const [seconds, setSeconds] = useState('00');
 
   useEffect(() => {
     const countdownDate = new Date('07/24/2023').getTime();
@@ -19,10 +20,10 @@ export default function DateCounter() {
       const minutesCount = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
       const secondsCount = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-      setDays(daysCount);
-      setHours(hoursCount);
-      setMinutes(minutesCount);
-      setSeconds(secondsCount);
+      setDays(formatValue(daysCount));
+      setHours(formatValue(hoursCount));
+      setMinutes(formatValue(minutesCount));
+      setSeconds(formatValue(secondsCount));
     };
 
     const timer = setInterval(updateCounter, 1000);
