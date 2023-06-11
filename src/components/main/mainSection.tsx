@@ -9,7 +9,7 @@ import { ReactComponent as HeadRight } from '../../UI/icons/head-right.svg';
 import Preloader from '../../UI/preloader/Preloader';
 import Popup from '../popup/popup';
 
-export default function MainSection() {
+export default function MainSection({ handleClick }: { handleClick: () => void }) {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<null | 'success' | 'error'>(null);
@@ -80,7 +80,7 @@ export default function MainSection() {
                 <ArrowRight />
               </button>
             </form>
-            <button type="button" className="bottom__events-btn">
+            <button type="button" className="bottom__events-btn" onClick={handleClick}>
               <div>Other Events</div>
               <ArrowDown />
             </button>
