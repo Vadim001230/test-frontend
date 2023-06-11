@@ -90,8 +90,11 @@
     font-size: 72px;
     font-weight: 600;
   }
+  &__value {
+    width: 100px;
+  }
   &__separate {
-    margin: 0 30px;
+    margin: 0 15px;
   }
   &__mean {
     position: relative;
