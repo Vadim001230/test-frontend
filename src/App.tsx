@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import MainSection from './components/main/mainSection';
 import EventsSection from './components/events/eventsSection';
 
